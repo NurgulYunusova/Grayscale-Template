@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.0625em;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.navLinks li a:hover {
+  color: rgb(241, 243, 247);
+}
+
+.mainScreen {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.7) 75%,
+      #000 100%
+    ),
+    url(assets/mountain.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navBar {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Nunito", sans-serif;
+}
+
+.navBar a {
+  color: rgb(204, 205, 207);
+  font-weight: 600;
+  transition: all 0.15s ease-in-out;
+}
+
+.leftSide {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.rightSide {
+  font-size: 16px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 30px;
+}
+
+.mainScreenBody {
+  height: calc(100vh - 90px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grayscaleHeading {
+  font-family: "Varela Round", sans-serif;
+  font-size: 104px;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.grayscaleParagraph {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  color: rgb(175, 176, 179);
+  margin-bottom: 30px;
+  font-weight: 600;
+  width: 490px;
+  text-align: center;
+}
+
+.getStartedButton {
+  background-color: #69a19d;
+  font-family: "Varela Round", sans-serif;
+  font-size: 13px;
+  padding: 18px 36px;
+  border: transparent;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.getStartedButton a {
+  color: #fff;
+}
+
+.getStartedButton:hover {
+  background-color: #4e8d89;
+}
+
+.builtWithSection {
+  background-image: url("assets/ipad.jpg");
+  background: linear-gradient(
+    to bottom,
+    #000 0%,
+    rgba(0, 0, 0, 0.9) 75%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  padding-top: 160px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.builtWithTextSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  text-align: center;
+}
+
+.ipadImage {
+  width: 65%;
+}
+
+.builtWithHeading {
+  color: #fff;
+  font-size: 32px;
+  font-family: "Nunito", sans-serif;
+}
+
+.builtWithParagraph {
+  color: rgb(175, 176, 179);
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  margin: 1.5em 0 5em;
+  font-weight: 600;
+}
+
+.builtWithParagraph a {
+  color: #69a19d;
+  text-decoration: underline;
+}
+
+.mountainImg img {
+  width: 800px;
+}
+
+.mountainSection {
+  background-color: #f8f9fa;
+}
+
+.mountainSectionContainer {
+  width: 65%;
+  margin: 0 auto;
+  padding: 160px 0 30px;
+  display: flex;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.mountainSectionText {
+  text-align: center;
+  border-left: 8px solid #4e8d89;
+  padding: 0 25px;
+}
+
+.mountainSectionText h4 {
+  font-size: 24px;
+  color: #212529;
+  font-weight: 600;
+}
+
+.mountainSectionText p {
+  font-size: 16px;
+  color: rgb(127, 127, 128);
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.fourCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  font-family: "Nunito", sans-serif;
+  width: 65%;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  padding-bottom: 160px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: #000;
+}
+
+.div3 {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: #000;
+}
+
+.div4 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.div2,
+.div3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 80px;
+  text-align: center;
+}
+
+.div2 h4,
+.div3 h4 {
+  color: #fff;
+  font-size: 24px;
+}
+
+.div2 p,
+.div3 p {
+  color: rgb(127, 127, 128);
+  font-size: 14.4px;
+}
+
+.fourCards img {
+  width: 100%;
+  height: 100%;
+}
+
+.signUpSection svg {
+  width: 30px;
+  color: #fff;
+}
+
+.signUpSection {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 75%,
+      #000 100%
+    ),
+    url(assets/mountain3.jpg);
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subscribeSection {
+  font-size: 32px;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  margin: 10px 0 50px;
+}
+
+input {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  height: auto;
+  font-family: "Varela Round", sans-serif;
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+  width: 600px;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+
+.submitBtn {
+  background-color: #69a19d;
+  font-family: "Varela Round", sans-serif;
+  font-size: 13px;
+  padding: 18px 36px;
+  border: transparent;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1);
+  padding: 1.25rem 2rem;
+  opacity: 0.7;
+}
+
+.threeCards svg {
+  width: 18px;
+  color: #4e8d89;
+}
+
+.threeCards {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.threeCards div {
+  width: 400px;
+  height: 180px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  border-bottom: 5px solid #4e8d89;
+}
+
+.threeCards div h4 {
+  font-size: 12.8px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  position: relative;
+  letter-spacing: 0.15rem;
+}
+
+.threeCards div h4::after {
+  content: " ";
+  width: 45px;
+  height: 4px;
+  background-color: #4e8d89;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.threeCards div p {
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.contactSection,
+.footer {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.threeCards div p a {
+  color: #4e8d89;
+  text-decoration: underline;
+}
+
+.socialMediaIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socialMediaIcons a {
+  text-align: center;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.socialMediaIcons a svg {
+  height: 1em;
+  vertical-align: middle;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  color: rgb(127, 127, 128);
+  font-weight: 700;
+}
+
+.socialMediaIcons a:hover svg {
+  color: rgb(150, 150, 153);
+}
